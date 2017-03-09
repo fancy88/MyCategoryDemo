@@ -18,6 +18,7 @@
 		1824D4121E712F4600CD2011 /* UIImage+ResizeImage.m in Sources */ = {isa = PBXBuildFile; fileRef = 1824D4111E712F4600CD2011 /* UIImage+ResizeImage.m */; };
 		1824D4161E713A1300CD2011 /* UIView+Extension.m in Sources */ = {isa = PBXBuildFile; fileRef = 1824D4151E713A1300CD2011 /* UIView+Extension.m */; };
 		1824D41A1E713AAB00CD2011 /* NSDate+Extention.m in Sources */ = {isa = PBXBuildFile; fileRef = 1824D4191E713AAB00CD2011 /* NSDate+Extention.m */; };
+		1824D41C1E713F0E00CD2011 /* iceberg.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 1824D41B1E713F0E00CD2011 /* iceberg.jpeg */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -41,6 +42,7 @@
 		1824D4151E713A1300CD2011 /* UIView+Extension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+Extension.m"; sourceTree = "<group>"; };
 		1824D4181E713AAB00CD2011 /* NSDate+Extention.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDate+Extention.h"; sourceTree = "<group>"; };
 		1824D4191E713AAB00CD2011 /* NSDate+Extention.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDate+Extention.m"; sourceTree = "<group>"; };
+		1824D41B1E713F0E00CD2011 /* iceberg.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = iceberg.jpeg; path = ../iceberg.jpeg; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -90,6 +92,7 @@
 		1824D3EF1E712B3600CD2011 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				1824D41B1E713F0E00CD2011 /* iceberg.jpeg */,
 				1824D3F01E712B3600CD2011 /* main.m */,
 			);
 			name = "Supporting Files";
@@ -210,6 +213,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1824D41C1E713F0E00CD2011 /* iceberg.jpeg in Resources */,
 				1824D3FF1E712B3600CD2011 /* LaunchScreen.storyboard in Resources */,
 				1824D3FC1E712B3600CD2011 /* Assets.xcassets in Resources */,
 				1824D3FA1E712B3600CD2011 /* Main.storyboard in Resources */,
@@ -351,6 +355,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = MyCategoryDemo/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = jijia.MyCategoryDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -362,6 +367,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = MyCategoryDemo/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = jijia.MyCategoryDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
