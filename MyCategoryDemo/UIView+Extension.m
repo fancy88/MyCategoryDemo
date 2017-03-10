@@ -45,7 +45,6 @@
     frame.origin.x = x;
     self.frame = frame;
     
-    
 }
 
 - (void)setY:(CGFloat)y {

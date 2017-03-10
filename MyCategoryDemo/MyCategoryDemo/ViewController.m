@@ -9,8 +9,12 @@
 #import "ViewController.h"
 #import "UIColor+RandomColor.h"
 #import "UIImage+ResizeImage.h"
+#import "NSDate+Extention.h"
+#import "UIView+Extension.h"
 
-@interface ViewController ()
+@interface ViewController (){
+    UIView *view ;
+}
 
 @end
 
@@ -20,6 +24,8 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
     [self getUI];
+    
+
 }
 
 - (void)getUI{
@@ -35,11 +41,31 @@
     [ImgView setImage:[UIImage imageWithString:@"iceberg.jpeg"]];
     [self.view addSubview:ImgView];
     
+    view = [[UIView alloc] initWithFrame:CGRectMake(self.view.frame.size.width / 2.0 - 50, 450, 100, 100)];
+    view.backgroundColor = [UIColor RandomColor];
+    [self.view addSubview:view];
+
 }
 
 - (void)buttonAction: (UIButton *)button{
     button.backgroundColor = [UIColor RandomColor];
-    NSLog(@"Hello world!");
+    button.selected = !button.selected;
+    BOOL flag = [[NSDate date] isYesterday];
+    if (flag) {
+        NSLog(@"Hello world!");
+    }else{
+        NSLog(@"Hello kitty!");
+    }
+    view.backgroundColor = [UIColor RandomColor];
+    if (button.selected) {
+        [UIView animateWithDuration:1 animations:^{
+            view.centerX = 100;
+        } completion:nil];
+    }else{
+        [UIView animateWithDuration:1 animations:^{
+            view.centerX = self.view.frame.size.width / 2.0;
+        } completion:nil];
+    }
 }
 
 
