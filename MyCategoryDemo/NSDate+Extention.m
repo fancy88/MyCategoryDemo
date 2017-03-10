@@ -46,7 +46,6 @@
     return nowCmp.year == selfCmp.year && nowCmp.month == selfCmp.month && nowCmp.day == selfCmp.day;
 }
 
-
 //是否为昨天
 - (BOOL)isYesterday{
     //日期格式化类
